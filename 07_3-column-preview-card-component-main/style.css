@@ -1,0 +1,148 @@
+@import url("https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap");
+
+/* 
+font-family: 'Big Shoulders Display', sans-serif;
+font-family: 'Lexend Deca', sans-serif;
+*/
+
+.orange {
+  background-color: hsl(31, 77%, 52%);
+  border-radius: 10px 0 0 10px; /* tl tr br bl */
+}
+
+.cyan1 {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.cyan2 {
+  background-color: hsl(179, 100%, 13%);
+  border-radius: 0 10px 10px 0; /* tl tr br bl */
+}
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  background-color: hsla(0, 0%, 100%, 0.75);
+  font-family: "Lexend Deca", sans-serif;
+  font-size: 1.5rem;
+}
+
+main {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  justify-content: center;
+  min-height: 100vh;
+}
+
+.container {
+  display: flex;
+  height: 500px;
+  margin: 0 3rem;
+  max-width: 950px;
+}
+
+@media (max-width: 880px) {
+  main {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    justify-content: center;
+    min-height: 100vh;
+  }
+
+  .container {
+    flex-direction: column;
+    max-height: 500px;
+    max-width: 300px;
+  }
+
+  .attribution {
+    position: absolute;
+    right: 3rem;
+    writing-mode: vertical-rl;
+  }
+
+  .orange {
+    border-radius: 10px 10px 0 0; /* tl tr br bl */
+  }
+
+  .cyan2 {
+    border-radius: 0 0 10px 10px; /* tl tr br bl */
+  }
+}
+
+@media (max-width: 414px) {
+  .attribution {
+    position: absolute;
+    top: 5rem;
+    writing-mode: horizontal-tb;
+  }
+}
+
+.car-item {
+  /* align-content: start; */
+  align-content: start;
+  display: grid;
+  gap: 4rem;
+  padding: 4.5rem;
+}
+
+h1 {
+  color: hsl(0, 0%, 95%);
+  font-family: "Big Shoulders Display", sans-serif;
+  font-size: 4rem;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+}
+
+/* .grid-flow {
+  display: grid;
+  align-content: start;
+  gap: 4rem;
+} */
+
+p.description {
+  color: hsla(0, 0%, 100%, 0.75);
+  line-height: 1.5;
+  margin-bottom: 3rem;
+  min-height: 15px;
+  min-width: 200px;
+}
+
+.btn {
+  border: 0;
+  background-color: hsl(0, 0%, 95%);
+  border-radius: 100vw;
+  cursor: pointer;
+  font-family: inherit;
+  padding: 1.5rem 0.5rem;
+  width: 60%;
+}
+
+button:hover {
+  border: 2px solid hsl(0, 0%, 95%);
+  color: hsl(0, 0%, 95%) !important;
+}
+
+.orange-btn:hover {
+  background-color: hsl(31, 77%, 52%);
+}
+
+.cyan1-btn:hover {
+  background-color: hsl(184, 100%, 22%);
+}
+
+.cyan2-btn:hover {
+  background-color: hsl(179, 100%, 13%);
+}

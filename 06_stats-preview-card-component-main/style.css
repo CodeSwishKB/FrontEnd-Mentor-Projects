@@ -1,0 +1,221 @@
+/* MY OWN WORK */
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+
+:root {
+  /* set the hsl color first */
+  --clr-primary-hsl-900: 233, 47%, 7%;
+  --clr-primary-hsl-800: 244, 38%, 16%;
+  --clr-secondary-hsl-600: 277, 64%, 61%;
+
+  --clr-neutral-hsl-100: 0, 0%, 100%;
+  --clr-neutral-hsl-200: 0, 0%, 100%, 0.75;
+  --clr-neutral-hsl-150: 0, 0%, 100%, 0.6;
+
+  /* arrange the hsl colors to set the transparency */
+  --clr-neutral-100: hsl(var(--clr-neutral-hsl-100));
+  --clr-neutral-150: hsl(var(--clr-neutral-hsl-150));
+  --clr-neutral-200: hsl(var(--clr-neutral-hsl-200));
+
+  --clr-secondary-600: hsl(var(--clr-secondary-hsl-600));
+  --clr-primary-800: hsl(var(--clr-primary-hsl-800));
+  --clr-primary-900: hsl(var(--clr-primary-hsl-900));
+
+  /* fonts */
+  --ff-inter: "Inter", sans-serif;
+  --ff-lex: "Lexend Deca", sans-serif;
+
+  --fw-regular: 400;
+  --fw-bold: 700;
+
+  --fs-400: 1.125rem;
+  --fs-450: 1.25rem;
+  --fs-500: 1.5rem;
+  --fs-550: 1.75rem;
+  --fs-600: 2rem;
+  --fs-650: 2.5rem;
+  --fs-700: 3rem;
+  --fs-800: 4rem;
+  --fs-900: 5rem;
+}
+
+/* reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  font: inherit;
+}
+
+html {
+  /* 62.5% = 16px = 1.6rem */
+  font-size: 62.5%;
+}
+
+body {
+  font-family: var(--ff-inter);
+  font-size: var(--fs-600);
+  display: flex;
+  align-items: center;
+  background-color: var(--clr-primary-900);
+  min-height: 100vh;
+  justify-content: center;
+  flex-direction: column;
+  margin: 0 auto;
+}
+
+.container {
+  /* background-color: var(--clr-primary-hsl-800); */
+  max-width: 1020px;
+  margin: 0 auto;
+}
+
+span.violet {
+  color: var(--clr-secondary-600);
+}
+
+.title {
+  font-size: 3.5rem;
+  font-weight: var(--fw-bold);
+  color: var(--clr-neutral-100);
+}
+
+.title-desc {
+  background-color: var(--clr-primary-800);
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  overflow: hidden;
+  border-radius: 15px;
+  margin: 0 5rem;
+}
+
+.title-desc div.text {
+  padding: 13%;
+}
+
+.description {
+  padding-top: 10px;
+}
+
+.image {
+  position: relative;
+}
+
+.image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.image::after {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background: hsl(var(--clr-secondary-hsl-600), 0.5);
+  content: "";
+  left: 0;
+  top: 0;
+}
+
+.description {
+  color: var(--clr-neutral-150);
+  font-size: var(--fs-500);
+  line-height: 2;
+}
+
+.flex-item {
+  color: var(--clr-neutral-200);
+}
+
+.flex-row {
+  font-size: var(--fs-500);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5rem;
+}
+
+.uppercase {
+  text-transform: uppercase;
+}
+
+span.num {
+  color: var(--clr-neutral-100);
+  display: block;
+  font-size: var(--fs-650);
+  font-weight: var(--fw-bold);
+  margin-bottom: 0.5rem;
+}
+
+.lexend {
+  font-family: var(--ff-lex);
+}
+
+@media (max-width: 750px) {
+  body {
+    font-family: var(--ff-inter);
+    font-size: var(--fs-550);
+    display: flex;
+    align-items: center;
+    background-color: var(--clr-primary-900);
+    min-height: 80vh;
+    justify-content: center;
+    margin: 5rem auto;
+  }
+
+  .container {
+    display: flex;
+    flex-direction: column-reverse;
+    height: auto;
+  }
+
+  img {
+    content: url("/images/image-header-mobile.jpg");
+  }
+
+  .image img {
+    border-radius: 1rem 1rem 0rem 0; /* top-left | top-right | bottom-right | bottom-left */
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  .image::after {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: hsl(var(--clr-secondary-hsl-600), 0.5);
+    content: "";
+    left: 0;
+    top: 0;
+    border-radius: 1rem 1rem 0rem 0;
+  }
+
+  .image {
+    order: -1;
+  }
+
+  .title-desc {
+    background-color: var(--clr-primary-800);
+    display: flex;
+    flex-direction: column;
+    gap: 4rem;
+    text-align: center;
+    border-radius: 0 0 1rem 1rem;
+  }
+
+  .title {
+    font-size: var(--fs-800);
+  }
+
+  .flex-row {
+    font-size: var(--fs-500);
+    display: flex;
+    flex-direction: column;
+
+    gap: 2rem;
+  }
+}

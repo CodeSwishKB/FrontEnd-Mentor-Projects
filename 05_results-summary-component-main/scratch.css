@@ -1,0 +1,212 @@
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap");
+
+/*
+  1. Use a more-intuitive box-sizing model.
+*/
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+/*
+  2. Remove default margin
+*/
+* {
+  margin: 0;
+}
+/*
+  Typographic tweaks!
+  3. Add accessible line-height
+  4. Improve text rendering
+*/
+body {
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+}
+/*
+  5. Improve media defaults
+*/
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+}
+/*
+  6. Remove built-in form typography styles
+*/
+input,
+button,
+textarea,
+select {
+  font: inherit;
+}
+/*
+  7. Avoid text overflows
+*/
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  overflow-wrap: break-word;
+}
+/*
+  8. Create a root stacking context
+*/
+#root,
+#__next {
+  isolation: isolate;
+}
+
+:root {
+  --clr-primary-400: hsl(39, 100%, 56%);
+  --clr-secondary-500: hsl(0, 100%, 67%);
+  --clr-secondary-300: hsl(166, 100%, 37%);
+  --clr-secondary-800: hsl(234, 85%, 45%);
+
+  --clr-gradient-400: hsl(252, 100%, 67%);
+  --clr-gradient-700: hsl(241, 81%, 54%);
+  --clr-gradient-800: hsla(256, 72%, 46%, 1);
+  --clr-gradient-900: hsla(241, 72%, 46%, 0);
+
+  --clr-new: hsl(247, 89%, 59%);
+
+  --clr-neutral-100: hsl(0, 0%, 100%);
+  --clr-neutral-200: hsl(221, 100%, 96%);
+  --clr-neutral-300: hsl(241, 100%, 89%);
+  --clr-neutral-800: hsl(224, 30%, 27%);
+}
+
+/* customed */
+.center {
+  text-align: center;
+}
+
+.white {
+  color: var(--clr-neutral-100);
+}
+
+.grey {
+  color: var(--clr-neutral-300);
+}
+
+.black-800 {
+  color: var(--clr-neutral-800);
+}
+
+/* set the font to rem */
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.8rem;
+  font-family: "Hanken Grotesk", sans-serif;
+}
+
+.main {
+  width: 500px;
+  margin: 25rem auto;
+}
+
+.container {
+  display: flex;
+  background-color: var(--clr-neutral-100);
+  border-radius: 2rem;
+  gap: 2rem;
+  box-shadow: 3px 4px 5px var(--clr-neutral-300);
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  width: 50%;
+  background-image: linear-gradient(
+    var(--clr-gradient-400),
+    var(--clr-gradient-800)
+  );
+  padding: 1em;
+  border-radius: inherit;
+  justify-content: center;
+  align-items: center;
+}
+
+.title {
+  font-size: 1.8rem;
+  font-weight: 700;
+}
+
+.num {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 50%;
+  background-color: var(--clr-gradient-800);
+  width: 15rem;
+  height: 15rem;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  aspect-ratio: 1 / 1;
+}
+
+.top-num {
+  font-size: 5rem;
+  font-weight: 800;
+  padding: 0;
+}
+
+.comment {
+  font-size: 2.5rem;
+}
+
+.description {
+  font-size: 1.6rem;
+  text-align: center;
+}
+
+/* summary */
+.summary-container {
+  display: flex;
+  flex-direction: column;
+  padding: 1em;
+  width: 45%;
+}
+
+.summary-div-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  padding-top: 1rem;
+  gap: 1rem;
+}
+
+.summary-div {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 1rem;
+  border-radius: 1rem;
+  font-size: 1.6rem;
+}
+
+.btn-continue {
+  margin-top: 1rem;
+  border: none;
+  padding: 1rem;
+  border-radius: 2rem;
+  color: var(--clr-neutral-100);
+  background-color: var(--clr-neutral-800);
+  font-size: 1.6rem;
+}
+
+.reaction {
+}

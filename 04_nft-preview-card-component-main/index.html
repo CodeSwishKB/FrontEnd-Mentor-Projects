@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Frontend Mentor | NFT preview card component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <article class="container">
+        <div class="image-wrapper">
+          <img
+            src="/images/image-equilibrium.jpg"
+            alt="image-equilibrium"
+            class="image"
+          />
+          <div class="overlay">
+            <div class="content">
+              <img class="filter-white" src="/images/icon-view.svg" alt="" />
+            </div>
+          </div>
+        </div>
+
+        <div class="title"><a href="#">Equilibrium #3429</a></div>
+        <p class="description primary-clr">
+          Our Equilibrium collection promotes balance and calm.
+        </p>
+        <div class="flex-side-container">
+          <div class="side1 flex-sides">
+            <img src="/images/icon-ethereum.svg" />0.041 ETH
+          </div>
+          <div class="side2 primary-clr flex-sides">
+            <img src="/images/icon-clock.svg" />3 days left
+          </div>
+        </div>
+        <hr />
+        <div class="creator-container">
+          <img src="/images/image-avatar.png" width="50" />
+          <span class="primary-clr">Creation of</span
+          ><span class="name">Jules Wyvern</span>
+        </div>
+      </article>
+
+      <div class="attribution">
+        <span style="color: white">Challenge by</span>
+        <a
+          class="link"
+          href="https://www.frontendmentor.io?ref=challenge"
+          target="_blank"
+          >Frontend Mentor</a
+        >. <span style="color: white">Coded by</span>
+        <a class="link" href="https://github.com/CodeswishJS" target="_blank"
+          >CodeswishJS</a
+        >.
+      </div>
+    </main>
+  </body>
+</html>
