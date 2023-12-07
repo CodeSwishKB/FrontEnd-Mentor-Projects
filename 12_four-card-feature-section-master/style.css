@@ -136,6 +136,7 @@ header{
 
     .grid{
         display: block;
+        margin-bottom: 70px;
     }
 
     .grid__art2, .grid__art3{
