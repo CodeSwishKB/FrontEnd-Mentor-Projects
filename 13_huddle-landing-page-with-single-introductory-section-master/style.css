@@ -128,12 +128,12 @@ main{
 
 @media (min-width: 62.5em){
     body{
-        margin: 0;
-        font-family: var(--ff-primary);
+        min-height: 100vh;
         background-image: url(images/bg-desktop.svg);
         background-repeat: no-repeat;
         background-position: center left;
         background-size: cover;
+        object-fit: cover;
         background-color: var(--clr-200);
     }
 
@@ -146,6 +146,7 @@ main{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 2em;
+        place-items: center;
     }
 
     .main__image img{
@@ -153,7 +154,7 @@ main{
     }
 
     .main__title{
-        font-size: 1.5rem;
+        font-size: 2.25rem;
     }
 
     .social-list{
